@@ -18,8 +18,13 @@ System.out.print("*");
 System.out.println();
 }
 }
-}*/
-
+}
+* * * * * *
+* * * * * *
+* * * * * *
+* * * * * *
+* * * * * *
+* * * * * * */
 
 /*2.numbersquare pattern
 import java.util.Scanner;
