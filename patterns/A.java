@@ -270,6 +270,263 @@ System.out.println("enter the number:");
     }
 }*/
 /*13.
+import java.util.Scanner;
+ 
+public class A 
+{
+public static void main(String[] args) 
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("enter n:");
+int a= sc.nextInt();
+System.out.println(""); 
+for (int i = 1; i <=a; i++)
+{
+for (int j = 1; j <=a-i; j++)
+{s
+System.out.print(" ");
+}
+for (int j = 1; j <= i; j++)
+{
+if (j == 1 || j == i)
+{
+System.out.print("* ");
+}
+else
+{
+System.out.print("  ");
+}
+}
+System.out.println();
+}      
+for(int i=a-1;i>=1;i--)
+{
+for(int j=1;j<=a-i;j++)
+{
+System.out.print(" ");
+}
+for (int j=1;j<=i;j++)
+{
+if (j==1||j==i)
+{
+System.out.print("* ");
+}
+else
+{
+System.out.print("  ");
+}
+}
+System.out.println();
+}
+}
+}
+
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+*/
+/*14.
+public class A{
+    public static void main(String[] args)
+ {
+ int rows = 5;
+  int columns = 9; 
+
+    for (int i = 0; i < rows; i++) 
+{
+            for (int j = 0; j < columns; j++) 
+{
+    if (i == 0 || i == rows - 1)
+ {
+                    if (i == rows - 1 && j == 0)
+ {
+                        System.out.print(" ");
+                    }
+                    System.out.print("*");
+                }
+                
+                else {
+                    if (j == 0 || j == columns - 1)
+ {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
+            }
+            
+            System.out.println();
+        }
+    }
+}*********
+*         *
+*         *
+*         *
+ *********
+*/ 
+/*15.
+public class A{
+    public static void main(String[] args) {
+        int rows = 7;
+        int columns = 13; 
+        for (int i = 0; i < rows; i++) 
+{
+            for (int j = 0; j < columns; j++) 
+{
+                if (i == 2 && j >= 2 && j <= 10)
+ {
+                    System.out.print("*");
+                }
+else if ((i < 2 || i > 2) && j == 6) 
+{
+                    System.out.print("*");
+                }
+                
+                else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}     *      
+      *      
+*********** 
+      *      
+      *      
+      *      
+      * */     
+/*16.
+class B {
+    public static void main(String[] args) {
+int size = 7;
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (j == i || j == size - i - 1)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}*/
+/*17.
+public class B {
+    public static void main(String[] args) {
+        int rows = 7;
+        int cols = 7;
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (j == 0) {
+                    System.out.print("* ");
+                else if (i == 0) {
+                    System.out.print("* ");
+                }
+                else if (i == rows / 2) {
+                    System.out.print("* ");
+                }
+                
+                else if (i == rows - 1) {
+                    System.out.print("* ");
+                }
+                else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}*/
+/*18.
+import java.util.Scanner; 
+public class A 
+{
+public static void main(String[] args) 
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter n:"); 
+int a=sc.nextInt();  
+System.out.println(" ");  
+for(int i=a;i>=1;i--)
+{   
+for(int j=1;j<=i;j++)
+{
+if(j== 1||j==i||i==a)
+{
+System.out.print("* ");
+}
+else
+{
+System.out.print("  ");
+}
+} 
+System.out.println();
+}  
+}
+}*
+/*19.
+import java.util.Scanner;
+public class A
+ {
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+System.out.print("enter n:");
+int n=sc.nextInt();
+for(int i=0;i<=n; i++)
+ {
+for(int j=0;j<(n-i);j++) 
+{
+System.out.print(" ");
+}
+for (int k=0;k<i;k++)
+ {
+System.out.print("*");
+}
+System.out.println(i);
+}
+}
+}*/
+
+/*20.
+public class PatternF {
+    public static void main(String[] args) {
+        int n = 7; 
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == 0) {
+                    System.out.print("* ");
+                }
+                else if (j == 0) {
+                    System.out.print("* ");
+                }
+                else if (i == 1 && j < n - 1) {
+                    System.out.print("* ");
+                }
+                else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }*/
+
+
+
+
+
+
+
+
 
 
 
